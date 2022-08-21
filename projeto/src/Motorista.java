@@ -1,15 +1,15 @@
 public class Motorista {
     public static void main(String[] args) {
-        Motor configuracoes_carro = new Motor(  "monofasico", 170, true );
-        Carro fusca = new Carro(configuracoes_carro, "Fusca");
+        Motor configuracoes_moto = new Motor(  "monofasico", 170, true );
+        Moto Naked = new Moto(configuracoes_moto, "Naked");
 
-        fusca.pisar_acelerador = true;
-        fusca.acelerar();
+        Naked.pisar_acelerador = true;
+        Naked.acelerar();
 
-        fusca.pisar_acelerador = false;
-        fusca.acelerar();
+        Naked.pisar_acelerador = false;
+        Naked.acelerar();
 
-        fusca.pisar_acelerador = true;
-        fusca.acelerar();
+        Naked.pisar_acelerador = true;
+        Naked.acelerar();
     }
 }
