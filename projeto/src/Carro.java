@@ -1,12 +1,12 @@
-public class Carro {
-    String nome_carro;
+public class Moto {
+    String nome_moto;
     String motor;
     int potencia;
     boolean turbo;
     boolean pisar_acelerador;
 
-    Carro(Motor m, String nome_carro){
-        this.nome_carro = nome_carro;
+    Carro(Motor m, String nome_moto){
+        this.nome_moto = nome_moto;
         this.motor = m.motor;
         this.potencia = m.potencia;
         this.turbo = m.turbo;
@@ -17,7 +17,7 @@ public class Carro {
     void acelerar(){
         if(pisar_acelerador){
             System.out.print("ESTAMOS PRONTOS:\n");
-            System.out.printf("MODELO: %s\n", this.nome_carro);
+            System.out.printf("MODELO: %s\n", this.nome_moto);
             System.out.printf("MOTOR: %s\n", motor);
             System.out.printf("POTENCIA: %d\n", potencia);
             System.out.printf("TURBO: %b\n", turbo);
